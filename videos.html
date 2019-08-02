@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>PALIERES ROCK-Videos</title>
+		<meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="estilosoportunidad.css" />
+		<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab&display=swap');
+</style>
+
+			
+	</head>
+	<body>
+		<main class="contenedor">
+			<div class="top">
+		<header><div><img class="img-fluid logo" src="img/logo.png"><a href="index.html"></a></div>
+			<div class="botonmenu2">
+				<div class="menu2">
+				<ul>
+					 <li><a href="index.html">INICIO</a></li>
+				     <li><a href="integrantes.html">INTEGRANTES</a></li>
+				     <li><a href="musica.html">MÚSICA</a></li>
+				     <li><a href="videos.html">VIDEOS</a></li>
+				     <li><a href="contacto.html">CONTACTO</a></li>
+	     		</ul>
+	     		</div>
+	     	</div>
+	     		
+	    </header>
+		<nav class="menu"><ul>
+	     <li><a href="index.html">INICIO</a></li>
+	     <li><a href="integrantes.html">INTEGRANTES</a></li>
+	     <li><a href="musica.html">MÚSICA</a></li>
+	     <li><a href="videos.html">VIDEOS</a></li>
+	     <li><a href="contacto.html">CONTACTO</a></li>
+	     </ul>
+     </nav>
+		<div class="redes"><ul>
+     <li><a href="https://www.facebook.com/dany.palieres"><img src="img/media/fb.png"></a></li>
+     <li><a href="https://www.instagram.com/danypalieres/?hl=es-la"><img src="img/media/inst.png"></a></li>
+     <li><a href="#"><img src="img/media/twi.png"></a></li>
+     <li><a href="https://www.youtube.com/channel/UCAVx4fNuN6NQ34P_ENBx3XA"><img src="img/media/youtube.png"></a></li>
+     <li><a href="#"><img src="img/media/mail.png"></a></li>
+     </ul></div>
+		</div>
+
+		<div class="contenedor-flex">
+			<section class="slider1"><img class="img-fluid" src="img/videos.jpg">
+			</section>
+
+<section class="cajas">
+	<div class="cajatitulo"><h1>VIDEOS</h1></div>
+	<hr size="1px" color="black"/>
+			<article class="nota">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/RuxSRWH-ljo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>PALIERES DVD EN VIVO 2018</h4>
+				<p>Fecha en el bar Rock la V 2018 en vivo con la productora Todos por el Rock.
+</p>
+			</article>
+			
+			
+			<article class="nota">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/22C9U2vL-jY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<h4>TU ERES SU SEGURIDAD</h4>
+				<p>Con invitados de lujo: Digote de Maquinación y el Pelado de Fierro. Queremos agradecer también a Nacho Marino y al Bicho de Fierro que compartieron una vez mas escenario con nosotros. Un honor!!!!!</p>
+			</article>
+			
+			<div class="up"><a href="#top"><img src="img/up.png"></a></div>
+			</section>
+		</div>
+		<footer>
+			©<time>2019</time> - Palieres Rock - Todos los derechos reservados
+		</footer>
+	</main>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	</body>
+</html>

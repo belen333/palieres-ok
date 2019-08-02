@@ -1,0 +1,412 @@
+*{margin: 0;padding:0;
+	font-size: 16px;
+	box-sizing:border-box;
+
+}
+font-family: 'Roboto Slab', serif;
+font-family: 'Oswald', sans-serif;
+
+body{background-color: red;}
+html{scroll-behavior: smooth;}
+
+img{width: 100%}
+
+.cajatitulo{width: 100%;
+     padding-left: 2em;}
+
+.contenedor {
+			background: black;
+			width: 100%;
+
+					}
+
+.top{display: flex;
+	flex-wrap: wrap;
+	background-image: url(img/fondo.png);}
+
+header{width: 30%;}
+
+nav{width: 70%;}
+
+
+footer {background: black;
+	    height: 150px;
+		padding: 2px;
+		text-align: center;
+		color: white;
+		font-size: 0.9em;
+
+		}
+
+		
+.logo{width:70%;
+	background-color: black;
+	animation-name: pal1;
+	animation-duration: 3s;
+	animation-delay: 1s;
+
+}
+
+
+.menu{
+	padding: 0.5em;
+	font-size: 1.5em;
+	font-family: 'Oswald', sans-serif;
+	text-align: right;
+
+}
+
+@keyframes pal1{
+		0%{	opacity: 0;
+		
+		}
+		
+		100%{opacity: 1;
+					
+		}
+	}
+
+.redes{
+	width: 100%;
+	background-color:#bc2025;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.redes ul{
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+.redes ul li{
+	display: inline-block;
+	padding: 5px;
+}
+
+h2{font-family: 'Oswald', sans-serif;
+   color:#bc2025;
+   font-size: 1.5em;
+   padding-top: 0.9em;
+}
+
+h1{font-family: 'Oswald', sans-serif;
+   color: black;
+   font-size: 1.8em;
+   padding-bottom: 0.5em;
+   background-color: white;
+}
+
+h4{font-family: 'Oswald', sans-serif;
+   color:#bc2025;
+   font-size: 1.1em;
+   padding-top: 0.9em;
+}
+
+p{
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.95em;
+}
+
+
+.menu ul{
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+.menu ul li{
+	display: inline-block;
+	padding: 2px;
+}
+
+.menu ul li a{
+	display: block;
+	padding: 0.5em;
+	/*background: white;*/
+	color: white;
+	text-decoration: none;
+}
+
+.menu ul li a:hover{
+	color: #bc2025;
+	background-color: white;
+	opacity: 1;
+	animation-name: pal1;
+	animation-duration: 1.3s;
+}
+/*MENU2*/
+.menu2{
+	   display:none;
+	   width: 200px;
+       font-size: 1.5em;
+	   font-family: 'Oswald', sans-serif;
+	   text-align: center;
+	   background-color: black;}
+
+.menu2 ul{
+	list-style-type: none;
+	text-decoration: none;
+	color: white;
+}
+
+.menu2 ul li{
+	display: list-item;
+	padding: 1.5px;
+	list-style-type: none;
+}
+
+.menu2 ul li a{
+	display: block;
+	padding: 0.5em;
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.menu2 ul li a:hover{
+	color: #bc2025;
+	background-color: white;
+	opacity: 1;
+	animation-name: pal1;
+	animation-duration: 1.3s;
+	list-style-type: none;
+}
+/*--------------------------*/
+
+.contenedor-flex{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+}
+
+.slider1{width: 100%;
+background-color: black;}
+			
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*-----------------------*/
+.cajas{width: 100%;
+	display: flex;
+	background-color: white;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 1em;
+				}
+
+.nota{width: 30%;
+      padding-bottom: 3em;}
+
+.nota4{width: 23%;
+      padding-bottom: 3em;
+      padding-right: 0.5em;
+      padding-left: 0.5em;}
+
+.up{
+	display: none;}
+
+/*FORMULARIO*/
+
+.textoform{
+    font-family: 'Oswald', sans-serif;
+    color:#bc2025;
+    font-size: 1.4em;
+}
+
+                    
+#formulario {                    
+	width: 100%;                    
+	/*padding: 1em;*/                    
+	}                    
+                    
+#FormContacto input, #FormContacto textarea {
+	background: black;
+	color: white;
+	width:100%; 
+	/*margin-bottom: 1em;*/
+	padding: 0.5em;
+	box-sizing: border-box;
+	border: 2px solid darkgrey;
+		
+}
+
+#FormContacto input[type="submit"]{
+	width: 40%;
+	background: #5c5c5c;
+	color: white;
+	text-align: center;
+
+}
+
+#FormContacto input[type="submit"]:hover{
+	background: #bc2025;}
+
+#FormContacto:valid{
+	background: white;
+}
+#FormContacto:invalid{
+	background: lightgrey;
+	}
+
+
+#FormContacto input[type="checkbox"],#FormContacto input[type="radio"]{
+	width: 15%;
+}
+
+#FormContacto input:focus,#FormContacto textarea:focus{
+	background: #bc2025;
+	color: white;
+}
+
+/*Media Queries*/
+/* Small / 0px - 600px */
+@media screen and (min-width: 0px) and (max-width: 600px){
+	header{display: flex;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		}
+    nav{display: none;
+    	justify-content: center;
+    	width: 100%;
+    	text-align: center;}
+	
+
+	.logo{width:50%;}
+	.nota{width: 100%;
+		padding-bottom: 6em;}
+
+	h2{font-size: 1.7em;
+	   padding-top: 0.2em;}
+	p{font-size: 1em;}
+
+.botonmenu2{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		right: 0;
+		background-color: #bc2025;
+		z-index: 2000;
+		background-image: url(img/hambur.png);
+	    }
+
+.menu2{
+	display: list-item;
+	position: relative;
+	top:50px;
+	right: -50px;
+	z-index: 2200;
+	transition: 0.5s;
+	list-style-type: none;
+
+}
+	
+.botonmenu2:hover .menu2{ 
+	transform: translate(-200px,0);
+    -webkit-transform: translate(-200px,0); /** Safari & Chrome **/
+    -o-transform: translate(-200px,0); /** Opera **/
+    -moz-transform: translate(-200px,0); /** Firefox **/
+	
+	} 
+
+.up{
+	display: inline;
+	width: 60px;
+	left: 50%;
+	} 
+.nota4{width: 100%;
+      }
+
+} 
+
+/*Medium / 601px - 900px */
+@media screen and (min-width: 601px) and (max-width: 900px){
+	.nota4{width: 50%;
+      }
+     .nota{width: 70%;}
+}

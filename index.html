@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>PALIERES ROCK</title>
+		<meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="estilosoportunidad.css" />
+		<style>
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab&display=swap');
+</style>
+
+			
+	</head>
+	<body>
+		<main class="contenedor">
+			<div class="top">
+		<header><div><img class="img-fluid logo" src="img/logo.png"><a href="index.html"></a></div>
+			<div class="botonmenu2">
+				<div class="menu2">
+				<ul>
+					 <li><a href="index.html">INICIO</a></li>
+				     <li><a href="integrantes.html">INTEGRANTES</a></li>
+				     <li><a href="musica.html">MÚSICA</a></li>
+				     <li><a href="videos.html">VIDEOS</a></li>
+				     <li><a href="contacto.html">CONTACTO</a></li>
+	     		</ul>
+	     		</div>
+	     	</div>
+	     		
+	    </header>
+		<nav class="menu"><ul>
+	     <li><a href="#">INICIO</a></li>
+	     <li><a href="integrantes.html">INTEGRANTES</a></li>
+	     <li><a href="musica.html">MÚSICA</a></li>
+	     <li><a href="videos.html">VIDEOS</a></li>
+	     <li><a href="contacto.html">CONTACTO</a></li>
+	     </ul>
+     </nav>
+		<div class="redes"><ul>
+     <li><a href="https://www.facebook.com/dany.palieres"><img src="img/media/fb.png"></a></li>
+     <li><a href="https://www.instagram.com/danypalieres/?hl=es-la"><img src="img/media/inst.png"></a></li>
+     <li><a href="#"><img src="img/media/twi.png"></a></li>
+     <li><a href="https://www.youtube.com/channel/UCAVx4fNuN6NQ34P_ENBx3XA"><img src="img/media/youtube.png"></a></li>
+     <li><a href="#"><img src="img/media/mail.png"></a></li>
+     </ul></div>
+		</div>
+
+		<div class="contenedor-flex">
+			<section class="slider1">
+				<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   <img src="img/carrousel/p2.jpg" style="width:100%">
+   </div>
+
+  <div class="mySlides fade">
+    <img src="img/carrousel/p1.jpg" style="width:100%">
+   </div>
+
+  <div class="mySlides fade">
+  <img src="img/carrousel/p3.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<br>			
+			</section>
+
+<section class="cajas">
+	<div class="cajatitulo"><h1>ÚLTIMAS NOTICIAS</h1></div>
+	<hr size="1px" color="black" />
+			<article class="nota">
+				<img class="img-fluid" src="img/palieres-evento.jpg" alt="Palieres Rock en el Marquee">
+				<h2>PRÓXIMAS PRESENTACIONES</h2>      
+  <p>OCTUBRE 5, 2019</p>
+  <p>El sábado 5 de octubre Palieres Rock se presenta en el Marquee, para festejar sus 25 años, y presentar su disco, junto a 2 bandas amigas: Smokes Monkeys (presenta su EP), y KAOS (presenta su disco)</p>
+  <p>Marquee Session Bar, Scalabrini Ortiz 666, CABA. 20 hs PUNTUAL!</p>
+			</article>
+			<article class="nota">
+				<img class="img-fluid" src="img/25.jpg" alt="25 años Palieres Rock">
+    <h2>PALIERES ROCK, 25 AÑOS</h2>
+    <p>Palieres Rock nació en el año 1994, en el barrio de Villa Crespo. Sus comienzos en la escena del rock fueron en plazas y parques tales como Parque Avellaneda, Parque Centenario, Parque Saavedra, y luego tocando en lugares como: Arlequines, Cemento, Loca Bohemia, Betty Blues, Halley, Remember, Melonio, Amadeus, Vía Cerino, Coctel Rock, Margarita, entre otros.<br>
+En el año 1999 editan su primer álbum "Bienvenidos a Nuestro Mundo" con 12 temas, uno de los cuales participó en la banda sonora de la película independiente "Alan" de Federico Tarántola.</p>
+			</article>
+			<article class="nota">
+				<img class="img-fluid" src="img/dvd.jpg" alt="25 años Palieres Rock">
+    <h2>DVD EN VIVO</h2>
+    <p>En 2018 grabó un DVD en vivo con grandes invitados: Jorge Donadio en bandoneón y Miguel Silva en guitarra. 
+Con varios proyectos y fechas futuras, la banda se sitúa en una etapa de crecimiento constante, el cual parece no tener techo.</p>
+			</article>
+			<div class="up"><a href="#top"><img src="img/up.png"></a></div>
+			</section>
+		</div>
+		<footer>
+			©<time>2019</time> - Palieres Rock - Todos los derechos reservados
+		</footer>
+	</main>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+	</body>
+</html>
